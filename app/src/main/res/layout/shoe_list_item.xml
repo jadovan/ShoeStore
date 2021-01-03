@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="shoe"
+            type="com.jadovan.shoestore.models.shoe_detail.Shoe" />
+    </data>
+
+    <!-- Used LinearLayout as this doesn't require a complicated layout since it is only a shell for
+    the shoe list items. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/shoe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:text="@{shoe.name}"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/shoe_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:text="@{shoe.company}"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/shoe_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:text="@{Double.toString(shoe.size)}"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/shoe_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:text="@{shoe.description}"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+</layout>

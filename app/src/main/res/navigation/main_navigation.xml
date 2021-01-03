@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/login_destination">
+    <fragment
+        android:id="@+id/login_destination"
+        android:name="com.jadovan.shoestore.models.login.LoginFragment"
+        android:label="login_fragment">
+        <action
+            android:id="@+id/action_login_to_welcome"
+            app:destination="@id/welcome_destination"
+            app:popUpTo="@id/welcome_destination"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome_destination"
+        android:name="com.jadovan.shoestore.models.welcome.WelcomeFragment"
+        android:label="welcome_fragment"
+        tools:layout="@layout/welcome_fragment">
+        <action
+            android:id="@+id/action_welcome_to_instruction"
+            app:destination="@id/instruction_destination"
+            app:popUpTo="@id/instruction_destination"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/instruction_destination"
+        android:name="com.jadovan.shoestore.models.instruction.InstructionFragment"
+        android:label="instruction_fragment">
+        <action
+            android:id="@+id/action_instruction_to_shoe_list"
+            app:destination="@id/shoe_list_destination"
+            app:popUpTo="@id/main_navigation"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoe_list_destination"
+        android:name="com.jadovan.shoestore.models.shoe_list.ShoeListFragment"
+        android:label="shoe_list_fragment">
+        <action
+            android:id="@+id/action_shoe_list_to_shoe_detail"
+            app:destination="@id/shoe_detail_destination"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_shoe_list_to_login"
+            app:destination="@id/login_destination"
+            app:popUpTo="@id/login_destination"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoe_detail_destination"
+        android:name="com.jadovan.shoestore.models.shoe_detail.ShoeDetailFragment"
+        android:label="shoe_detail_fragment">
+        <action
+            android:id="@+id/action_shoe_detail_to_shoe_list"
+            app:destination="@id/shoe_list_destination"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+</navigation>

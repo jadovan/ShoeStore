@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+
+    <string name="next_btn">Next</string>
+    
+    <!-- login fragment string resources -->
+    <string name="login_name">Login</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="new_user_label">New user?</string>
+    <string name="new_user_btn">Create Account</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="image_content_desc">Shoe store image</string>
+
+    <!-- Welcome fragment string resources -->
+    <string name="welcome_name">Welcome</string>
+    <string name="welcome_intro">Welcome to our world famous online store!</string>
+    <string name="welcome_body">You can find most brands of shoes within our online catalog.
+                                If you are unable to find the shoe that you would like to buy
+                                then we will conduct research on the requested item and will
+                                attempt to get it in stock. </string>
+    <string name="refund_label">Refund Policy</string>
+    <string name="welcome_refund">We have a refund policy of 30 days with no questions asked.
+                                  After 30 days we will work with you on your return, but it
+                                  may incur additional shipping and restocking fees.</string>
+
+    <!-- Instruction fragment string resources -->
+    <string name="instruction_name">Instructions</string>
+    <string name="instructions_label">Instructions</string>
+    <string name="instructions_shoe_detail">On the next screen you will need to enter the
+        Shoe Name, Company, Shoe Size and Description for each shoe. Once all of the information
+        has been entered, then you will click on the Add button. If you do not wish to add the shoe,
+        then you can click on the Cancel button.</string>
+    <string name="instructions_enter">Click on the Next button when you are ready to enter the store!</string>
+
+
+    <!-- Shoe Detail fragment string resources -->
+    <string name="shoe_detail_name">Shoe Details</string>
+    <string name="shoe_detail_label">Enter your shoe details below and click on the Save button once you are finished.</string>
+    <string name="shoe_detail_warning">Note: You must enter the name, company, and size before you can save a shoe!</string>
+    <string name="shoe_name">Name:</string>
+    <string name="shoe_name_hint">i.e. Gel-Kayano 26</string>
+    <string name="shoe_company">Company:</string>
+    <string name="shoe_company_hint">i.e. Asics</string>
+    <string name="shoe_size">Size:</string>
+    <string name="shoe_size_hint">i.e. 9.5</string>
+    <string name="shoe_description">Description:</string>
+    <string name="shoe_description_hint">i.e. Running</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="save_btn">Save</string>
+    <string name="logout_menu">Logout</string>
+
+    <!-- Shoe List fragment string resources -->
+    <string name="shoe_list_name">Shoe List</string>
+    <string name="add_btn">+</string>
+
+</resources>
