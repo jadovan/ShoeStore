@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.onNavDestinationSelected
 import com.jadovan.shoestore.MainActivity
 import com.jadovan.shoestore.R
 import com.jadovan.shoestore.databinding.ShoeListFragmentBinding
@@ -70,16 +71,8 @@ class ShoeListFragment : Fragment() {
 
     // Function for selecting the logout option in the overflow menu
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.LoginFragment) {
-            onLogout()
-        }
-        return super.onOptionsItemSelected(item)
+        return item.onNavDestinationSelected(findNavController())
+                || super.onOptionsItemSelected(item)
     }
-
-    // Function for logging out and returning to the login fragment
-    private fun onLogout() {
-        findNavController().navigate(ShoeListFragmentDirections.actionShoeListToLogin())
-    }
-
 
 }
