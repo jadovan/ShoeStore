@@ -39,7 +39,8 @@
     <!-- Shoe Detail fragment string resources -->
     <string name="shoe_detail_name">Shoe Details</string>
     <string name="shoe_detail_label">Enter your shoe details below and click on the Save button once you are finished.</string>
-    <string name="shoe_detail_warning">Note: You must enter the name, company, and size before you can save a shoe!</string>
+    <string name="shoe_detail_warning">You must enter the name, company, and size before you can save a shoe!</string>
+    <string name="shoe_detail_success">You have successfully added a shoe to the list!</string>
     <string name="shoe_name">Name:</string>
     <string name="shoe_name_hint">i.e. Gel-Kayano 26</string>
     <string name="shoe_company">Company:</string>
