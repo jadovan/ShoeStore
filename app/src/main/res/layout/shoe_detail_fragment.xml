@@ -167,7 +167,7 @@
                 android:text="@string/cancel_btn"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/shoe_detail_warning" />
+                app:layout_constraintTop_toBottomOf="@+id/shoe_description_edit" />
 
             <Button
                 android:id="@+id/save_button"
@@ -181,7 +181,7 @@
                 android:text="@string/save_btn"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/shoe_detail_warning" />
+                app:layout_constraintTop_toBottomOf="@+id/shoe_description_edit" />
 
             <TextView
                 android:id="@+id/shoe_details_label"
@@ -197,22 +197,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/shoe_details_name" />
-
-            <TextView
-                android:id="@+id/shoe_detail_warning"
-                android:layout_width="@dimen/zero_width"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginTop="@dimen/detail_label_margin"
-                android:layout_marginEnd="@dimen/default_margin"
-                android:text="@string/shoe_detail_warning"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/medium_text"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/shoe_description_edit" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
