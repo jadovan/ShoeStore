@@ -4,11 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.jadovan.shoestore.R
 import com.jadovan.shoestore.databinding.ShoeDetailFragmentBinding
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.jadovan.shoestore.MainActivity
 
@@ -39,8 +41,17 @@ class ShoeDetailFragment : Fragment() {
             findNavController().navigate(ShoeDetailFragmentDirections.actionShoeDetailToShoeList())
         }
 
+        shoeDetailViewModel.message.observe(viewLifecycleOwner, Observer { event ->
+            event.getContentIfNotHandled()?.let { message ->
+                toast(message)
+            }
+        })
+
         return binding.root
     }
 
+    private fun toast(message: Int) {
+        Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+    }
 
 }
